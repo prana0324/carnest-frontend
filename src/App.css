@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body.light {
+  background: #f8fafc;
+  color: #0f172a;
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark {
+  background: #0f172a;
+  color: #f8fafc;
+  transition: all 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body.dark .card {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border: 1px solid #334155 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body.dark .table, body.dark tbody, body.dark tr, body.dark td, body.dark th {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-bottom-color: #334155 !important;
 }
 
-.App-link {
-  color: #61dafb;
+body.dark .table-light {
+  background-color: #334155 !important;
+  color: #ffffff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body.dark .text-muted {
+  color: #94a3b8 !important;
 }
+
+body.dark input {
+  background-color: #334155 !important;
+  color: #ffffff !important;
+  border-color: #475569 !important;
+}
+
+body.dark input::placeholder {
+  color: #cbd5e1 !important;
+}
+
+.transition-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.transition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bg-success-light { background-color: rgba(34, 197, 94, 0.15); }
+.bg-danger-light { background-color: rgba(239, 68, 68, 0.15); }
