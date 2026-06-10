@@ -12,7 +12,7 @@ function Register() {
     e.preventDefault();
     try {
       await API.post("/auth/register", { name, email, password });
-      alert("Registration Successful! 🎉 Welcome to CarNest.");
+      alert("Registration Successful!  Welcome to CarNest.");
       navigate("/login");
     } catch (err) {
       alert(err.response?.data?.message || "Registration Failed");

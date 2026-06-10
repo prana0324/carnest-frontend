@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="hero-section text-center d-flex align-items-center justify-content-center vh-100">
       <div className="container backdrop-blur p-5 rounded-5 shadow-lg max-width-800">
-        <h1 className="display-1 fw-bold text-white mb-2 tracking-tight">CarNest 🚗</h1>
+        <h1 className="display-1 fw-bold text-white mb-2 tracking-tight">CarNest </h1>
         <p className="lead text-light mb-5 fs-3 font-weight-300">Premium Car Rental Experience At Your Fingertips.</p>
         <div className="d-flex justify-content-center gap-3">
           <Link to="/register" className="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg transition-btn">Create Account</Link>

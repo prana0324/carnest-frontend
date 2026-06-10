@@ -28,7 +28,7 @@ function VehicleCard({ vehicle, onBook }) {
               disabled={!vehicle.available}
               onClick={() => onBook(vehicle._id)}
             >
-              {vehicle.available ? 'Book Now 🚗' : 'Unavailable'}
+              {vehicle.available ? 'Book Now ' : 'Unavailable'}
             </button>
           </div>
         </div>
