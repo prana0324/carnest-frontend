@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-3 shadow sticky-top">
       <Link className="navbar-brand fw-bold fs-3 letter-spacing-1 text-primary" to="/">
-        🚗 CarNest
+         CarNest
       </Link>
 
       <div className="ms-auto d-flex gap-2 align-items-center">
